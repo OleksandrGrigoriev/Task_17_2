@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS cars_db;
+
+USE cars_db;
+
+CREATE TABLE cars (
+	id INT NOT NULL AUTO_INCREMENT,
+    model VARCHAR(20) UNIQUE,
+    impl_year INT NOT NULL,
+    PRIMARY KEY (id)
+);
